@@ -8,7 +8,7 @@ import Budget from './components/Budget';
 // Add code to import the other components here under
 import Remaining from './components/Remaining';
 import ExpenseList from './components/ExpenseList'
-
+import Currency from './components/Currency'
 import { AppProvider } from './context/AppContext';
 import ExpenseTotal from './components/ExpenseTotal';
 // import ExpenseItem from './components/ExpenseItem';
@@ -37,7 +37,12 @@ const App = () => {
                             <div className ='col-sm'>
                                 <ExpenseTotal />
                             </div>
-                        }        
+                        }  
+                        {
+                            <div className='col-sm'>
+                                    <Currency />
+                            </div>
+                        }      
                     </div>      
                     <h3 className='mt-3'> Allocation</h3> 
 
